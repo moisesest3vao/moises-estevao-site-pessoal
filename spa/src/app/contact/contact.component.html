@@ -1,0 +1,68 @@
+<section class="text-white pixel" [ngStyle]="{backgroundImage:'linear-gradient(rgba(18, 33, 42, 0.4), rgba(18, 33,  42, 0.4)),url(assets/images/fundoabout.gif)'}"  id="contact">
+    <div class="container">
+        <h2 class="text-white title">{{'contact.contactMe' | translate}}</h2>
+        <span class="bar-title mb-2"></span>
+        <div class="row" data-aos-anchor-placement="top-center">
+            <div class="col-md-3 col-lg-3">
+                <div class="contact-info">
+                    <h4 class="talk-to-me">{{'contact.notHesitateToContactMe' | translate}}</h4>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div *ngIf="this.enviouFormulario">
+                  <h1>{{'contact.thanks4yourmessage' | translate}}</h1>
+                  <p>{{'contact.illtrytoanwser' | translate}}</p>
+                  <img class="icon" src="assets/images/email.png"> <p class="icon-text">{{'contact.oremail' | translate}}</p>
+                  <br>
+                  <a href="mailto:moisesestevao2004@hotmail.com">moisesestevao2004@hotmail.com</a>
+                </div>
+                <form *ngIf="!this.enviouFormulario" [formGroup]="formMensagem">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="identite">{{'contact.identify' | translate}}</label>
+                            {{'contact.nomevalid' | translate}}
+                            <div class="col-sm-10">
+                                <input type="text" formControlName="nome" maxlength="100" class="form-control" placeholder="{{'contact.enterIdentify' | translate}}" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">{{'contact.email' | translate}}</label>
+                            {{'contact.emailvalid' | translate}}
+                            <div class="col-sm-10">
+                                <input type="text" formControlName="email" maxlength="70" class="form-control" placeholder="{{'contact.enterEmail' | translate}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="object">{{'contact.object' | translate}}</label>
+                            {{'contact.assuntovalid' | translate}}
+                            <div class="col-sm-10">
+                                <input type="text" formControlName="assunto" maxlength="100" class="form-control" placeholder="{{'contact.enterObject' | translate}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="comment">{{'contact.message' | translate}}</label>
+                            {{'contact.mensagemvalid' | translate}}
+                            <div class="col-sm-10">
+                                <textarea type="text" formControlName="mensagem" maxlength="650" class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div *ngIf="formMensagem.invalid">
+                              <p style="color:red">{{'contact.error' | translate}}</p>
+                            </div>
+
+                            <div class="col-sm-offset-2 col-sm-12" >
+                                <re-captcha (resolved)="resolved($event)" siteKey="6LcdtU8hAAAAACMApfEgESD0roV8YV0n8FcLD1Yz"> </re-captcha>
+                                <button type="submit" (click)="enviaMensagem()" [disabled]="formMensagem.invalid || this.captcha==null" class="mt-4 btn btn-info">{{'contact.send' | translate}}</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    .
+</section>

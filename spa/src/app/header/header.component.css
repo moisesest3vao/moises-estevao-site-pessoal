@@ -1,0 +1,41 @@
+li:hover,.home:hover {
+    background-color: #340e12;
+}
+.nav-image{
+  width: 25px;
+}
+i:hover,a:hover {
+    background-color: #340e12;
+}
+nav{
+    background-color: #1a131e;
+}
+.pixel{
+}
+
+i{
+  font-size: 24px;
+  padding-right: 6px;
+  color: #6f7180;
+}
+
+.nav-home:hover{
+  background-color: rgb(51, 59, 61);
+}
+mat-radio-button{
+  color:white;
+}
+a{
+  display: flex;
+  align-items: center;
+  padding: 3px 4px;
+  margin-bottom: 2px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+li{
+  display: inline-flex;
+}
+
+

@@ -1,0 +1,50 @@
+li.not-active {
+  height: 10px;
+  width: 100px;
+  background-color:#1a131e;
+}
+
+.text-white {
+  color: white;
+}
+
+.title {
+  font-size: 50px;
+}
+
+h2 {
+  color: white;
+}
+.message{
+  font-size:28px;
+}
+@media screen and (max-width: 700px)  {
+  .message{
+    font-size:18px;
+  }
+
+
+}
+
+.img-reference {
+  width: 60px;
+}
+
+
+
+.pixel {
+}
+
+.card {
+  background-color: #130b18d5;
+}
+
+li.active {
+  height: 10px;
+  width: 100px;
+  background-color: rgb(0, 0, 0);
+}
+
+section {
+  padding-top: 100px;
+}
