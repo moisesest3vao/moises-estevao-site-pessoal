@@ -11,15 +11,22 @@ import javax.validation.Valid;
 
 @Service
 public class MensagemService {
-    @Autowired
     SpamService spamService;
-    @Autowired
-    MensagemRepository repository;
-    @Autowired
+    MensagemRepository mensagemRepository;
     EmailService emailService;
+
+
+    @Autowired
+    public MensagemService(SpamService spamService, MensagemRepository mensagemRepository, EmailService emailService) {
+        this.spamService = spamService;
+        this.mensagemRepository = mensagemRepository;
+        this.emailService = emailService;
+    }
+
 
     public Mensagem save(@Valid MensagemForm form, HttpServletRequest request){
         if(this.spamService.validate(request)){
+
             Mensagem mensagem = new Mensagem(form);
             Integer response = this.emailService.send(
                     mensagem.getEmail(),
@@ -27,8 +34,9 @@ public class MensagemService {
                     mensagem.getAssunto(),
                     mensagem.getMensagem()
             );
-            if(response == 0) return repository.save(mensagem);
+            if(response == 0) return this.mensagemRepository.save(mensagem);
         }
+
         return null;
     }
 
