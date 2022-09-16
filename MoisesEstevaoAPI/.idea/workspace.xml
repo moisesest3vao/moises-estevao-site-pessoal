@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c2c0fe8-2bfa-4ae7-abb2-ff0227db9ce7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/moisesestevao/api/mensagens/service/MensagemServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/moisesestevao/api/mensagens/application/service/MensagemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/moisesestevao/api/mensagens/application/service/MensagemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/moisesestevao/api/mensagens/application/service/MensagemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/moisesestevao/api/mensagens/application/service/MensagemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/moisesestevao/api/ApiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/moisesestevao/api/ApiApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/moisesestevao/api/mensagens/service/SpamServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +71,7 @@
       <command value="{" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MensagemServiceTest.deveriaSalvarAMensagem">
+  <component name="RunManager" selected="JUnit.SpamServiceTest.deveriaBloquearOAcessoEmCasoDeSpam">
     <configuration name="ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.moisesestevao.api.ApiApplication" />
       <module name="api" />
@@ -121,6 +116,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpamServiceTest.deveriaBloquearOAcessoEmCasoDeSpam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.moisesestevao.api.mensagens.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.moisesestevao.api.mensagens.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.moisesestevao.api.mensagens.service.SpamServiceTest" />
+      <option name="METHOD_NAME" value="deveriaBloquearOAcessoEmCasoDeSpam" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MoisesEstevaoAPI" />
       <method v="2">
@@ -136,6 +147,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpamServiceTest.deveriaBloquearOAcessoEmCasoDeSpam" />
         <item itemvalue="JUnit.MensagemServiceTest.deveriaSalvarAMensagem" />
         <item itemvalue="JUnit.MensagemServiceTest" />
         <item itemvalue="Application.ApiApplication" />
