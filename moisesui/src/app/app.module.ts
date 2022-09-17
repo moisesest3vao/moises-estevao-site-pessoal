@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { CurriculumVitaeComponent } from './curriculum-vitae/curriculum-vitae.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
@@ -29,8 +27,6 @@ import { RecaptchaModule } from 'ng-recaptcha'
   declarations: [
     AppComponent,
     AboutComponent,
-    CurriculumVitaeComponent,
-    ProjectsComponent,
     SkillsComponent,
     ContactComponent,
     HeaderComponent,
