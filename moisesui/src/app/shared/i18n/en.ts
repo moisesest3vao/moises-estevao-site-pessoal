@@ -2,15 +2,15 @@ export const locale = {
   lang: 'en',
   data: {
       'about': {
-          'title': 'About',
-          'jobTitle': 'Software Engineer',
-          'introductionOfMe': "Information Security student, curious, tuned in and prepared to rack my brains to learn and teach new things.",
+          'title': 'Who am I?',
+          'jobTitle': 'Moisés Estevão',
+          'introductionOfMe': "I'm a Software Developer passionate about tech and how it does impact the live being's lifes. I'm literally a nerd, lover of videogames, animes and astronomy.",
           'passionateAboutDevelopment':'Passionate about',
           'mobility': 'South America',
           'years': 'Years',
           'graduation': 'Bachelor',
           'myResearch': 'Hybrid',
-          'researchDescription': "I'm an Engineer back-end focused with 1 year of experience in software development. I've worked on a crucial security software for the biggest bank of Latin America, and also had experience developing an specific document management software for an small company. I have solid knowledge about REST API's and Microservices with Spring Boot. I'm interested about Cloud Computing and how it keeps changing the technology field.",
+          'researchDescription': "Technologies that I'm familiar with: Java; Spring Boot; Hibernate (Spring Data JPA); REST APIs; Microservices Architecture (Spring Cloud); SQL and NoSQL (MongoDB) Databases ; Unit tests (JUnit, Mockito); Agile metodologies (Scrum); SOLID; Design Patterns; Data Streaming (Kafka); Cloud Computing with AWS Cloud (EC2, RDS, ElasticBeanstalk, S3); Containers (Docker) ; Version Control (Git); OPP; Angular (TypeScript); Identity and Access Management (RedHat Keycloak, IdentityIQ); Linux; ",
           'and':'and',
           'followMeOn':'Follow me on',
           'local':'Sao Paulo, Brazil'

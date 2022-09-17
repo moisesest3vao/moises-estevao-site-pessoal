@@ -2,15 +2,15 @@ export const locale = {
     lang: 'pt',
     data: {
         'about': {
-            'title': 'Sobre',
+            'title': 'Quem sou eu?',
             'jobTitle': 'Moisés Estevão',
-            'introductionOfMe': 'Estudante de Segurança da Informação, curioso, antenado e disposto a quebrar a cabeça para aprender e ensinar coisas novas.',
+            'introductionOfMe': 'Sou Desenvolvedor de Software apaixonado por tecnologia e como a mesma impacta a vida dos seres vivos. Sou nerdola de coração, amo videogames, animes e astronomia.',
             'passionateAboutDevelopment':'Apaixonado por desenvolvimento',
             'mobility': 'América do Sul',
             'years': 'Anos',
             'graduation': 'Tecnólogo',
             'myResearch': 'Híbrido',
-            'researchDescription': "Sou Engenheiro com foco em back-end com 1 ano de experiência em desenvolvimento de software. Trabalhei no desenvolvimento de um software crucial de segurança da informação para uma empresa de grande porte, e também desenvolvi software específico para uma empresa menor que aumentou em 75% a velocidade de execução do processo. Possuo sólidos conhecimentos em modelagem de API's e Microsserviços com Spring Boot. Tenho interesse em Cloud Computing e como a mesma segue transformando o mercado de tecnologia.",
+            'researchDescription': "Tecnologias que já tive contato: Java; Spring Boot; Hibernate (Spring Data JPA); APIs REST; Arquitetura de Microsserviços (Spring Cloud); Bancos de Dados SQL e NoSQL (MongoDB); Testes unitários (JUnit, Mockito); Metodologias ágeis (Scrum); SOLID; Design Patterns; Mensageria (Kafka); Cloud Computing com AWS Cloud (EC2, RDS, ElasticBeanstalk, S3); Conteinerização (Docker) ; Controle de versão (Git); Programação Orientada a Objetos; Angular (TypeScript); Identity and Access Management (RedHat Keycloak, IdentityIQ); Linux; ",
             'and':'e',
             'followMeOn':'Me siga no',
             'local':'São Paulo, Brasil'
