@@ -1,8 +1,8 @@
 # Moisés Estevão - Portfolio
-Este é o projeto do meu site, desenvolvido com Angular, Spring Boot e MySQL.
+Este é o projeto do meu site, desenvolvido com Angular, Spring Boot e MySQL. Foi hospedado na AWS utilizando ElasticBeanstalk, RDS, MySQL, e S3
 <br>
 <br>
-Link do site estático hospedado na AWS: http://moisesestevao-portfolio.s3-website-us-east-1.amazonaws.com
+Link de uma publicação no linkedIn sobre o projeto: http://moisesestevao-portfolio.s3-website-us-east-1.amazonaws.com
 <br>
 <br>
 O projeto é composto por duas aplicações: uma API e um Client. O CLient é uma página de apresentação com um formulário protegido por reCaptcha, que envia os dados para a API, que por sua vez se conecta com a API do gmail e me envia um correio eletrônico notificando a mensagem do usuário.
